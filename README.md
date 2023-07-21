@@ -47,15 +47,16 @@ which contains a single entry dictionary like {”party name”: ”party A”}
 
 * ```/election/simulate```: Has one method ```:PUSH``` that calculates the D’Hondt algorithm.
 Requires a dictionary with a key ”region” that has a valid region name and multiple
-keys for parties that contains the percentages. (e.g. { ”region”: ”Region1”, ”Party1”:
-50, ”Party2”: 50 })
+keys for parties that contains the percentages.
+
+(e.g. { ”region”: ”Region1”, ”Party1”: 50, ”Party2”: 50 })
 
 ### Client
 
-* In our client code, following operations completed:
-  • Pull the list of the parties that are currently in the list. Print the party list on the
-  console (at this stage, it should be empty).  
-  • Add ”Party1”, ”Party2”, ”Party3” and ”Party4” to the list by using POST method.  
+* In our client code, following operations completed:  
+  • Pull the list of the parties that are currently in the list.  
+  • Print the party list on the console (at this stage, it should be empty).      
+  • Add ”Party1”, ”Party2”, ”Party3” and ”Party4” to the list by using ```POST``` method.  
   • Print the list of the parties by re-fetching the data.  
   • Try to re-add ”Party4” and print the error message and status code.  
   • Delete ”Party4” from the party list.  
